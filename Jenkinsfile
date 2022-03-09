@@ -1,5 +1,5 @@
 pipeline {
-    node('Built-In Node')
+    agent 
     stages {
         stage('Update Ubuntu') {
             steps {
