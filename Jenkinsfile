@@ -1,5 +1,5 @@
 pipeline {
-    agent 
+    node { 
     stages {
         stage('Update Ubuntu') {
             steps {
@@ -54,5 +54,6 @@ pipeline {
                sh 'sudo kitchen test' 
             }
         }
+}
 }
 }
