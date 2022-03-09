@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Update Ubuntu') {
             steps {
-                sh 'sudo apt-get update'
+                sh 'apt-get update'
             }    
         }
         stage('Install ChefDK') {
@@ -14,7 +14,7 @@ pipeline {
                         echo 'Skipping Chef install...already installed'
                     }else{
                         sh 'wget https://packages.chef.io/files/stable/chef-workstation/21.10.640/ubuntu/20.04/chef-workstation_21.10.640-1_amd64.deb'
-                        sh 'sudo dpkg -i chef-workstation_21.10.640-1_amd64.deb'
+                        sh 'dpkg -i chef-workstation_21.10.640-1_amd64.deb'
                     }
                 }
             }
