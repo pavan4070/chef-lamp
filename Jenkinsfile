@@ -51,8 +51,9 @@ pipeline {
                     sh 'sudo rm -rf $WORKSPACE/Berksfile.lock'
                     sh 'mv $WORKSPACE/* $CHEFREPO/chef-repo/cookbooks/lamp'
                     sh 'cd $CHEFREPO/chef-repo/cookbooks/lamp'
-		    sh 'chef install Policyfile'
-		    sh 'chef push lamp Policyfile.lock.json'	
+		    sh 'knife node policy set lamp lamp lamp'
+					   
+		 	
                  
                     withCredentials([sshUserPrivateKey(credentialsId: 'node-key', keyFileVariable: 'AGENT_SSHKEY', passphraseVariable: '', usernameVariable: '')]) {
                         sh "knife ssh 'name:lamp' -x ubuntu -i $AGENT_SSHKEY 'sudo chef-client' -c $CHEFREPO/chef-repo/.chef/config.rb"      
