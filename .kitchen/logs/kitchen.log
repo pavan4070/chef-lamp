@@ -1,0 +1,320 @@
+I, [2022-03-04T12:05:15.009562 #58090]  INFO -- Kitchen: -----> Starting Test Kitchen (v3.2.2)
+I, [2022-03-04T12:05:16.815071 #58090]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-2004>
+I, [2022-03-04T12:05:16.815559 #58090]  INFO -- Kitchen: -----> Destroying <default-ubuntu-2004>...
+I, [2022-03-04T12:05:52.902701 #58090]  INFO -- Kitchen: -----> Testing <default-ubuntu-2004>
+I, [2022-03-04T12:05:52.902857 #58090]  INFO -- Kitchen: -----> Creating <default-ubuntu-2004>...
+I, [2022-03-04T12:06:46.223264 #58090]  INFO -- Kitchen: -----> Converging <default-ubuntu-2004>...
+E, [2022-03-04T12:06:52.455681 #58090] ERROR -- Kitchen: ------Exception-------
+E, [2022-03-04T12:06:52.455716 #58090] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2022-03-04T12:06:52.455738 #58090] ERROR -- Kitchen: Message: 1 actions failed.
+>>>>>>     Converge failed on instance <default-ubuntu-2004>.  Please see .kitchen/logs/default-ubuntu-2004.log for more details
+E, [2022-03-04T12:06:52.455758 #58090] ERROR -- Kitchen: ----------------------
+E, [2022-03-04T12:06:52.455776 #58090] ERROR -- Kitchen: ------Backtrace-------
+E, [2022-03-04T12:06:52.455793 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/command.rb:181:in `report_errors'
+E, [2022-03-04T12:06:52.455811 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/command.rb:172:in `run_action'
+E, [2022-03-04T12:06:52.455829 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/command/test.rb:41:in `block in call'
+E, [2022-03-04T12:06:52.455859 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+E, [2022-03-04T12:06:52.455877 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/command/test.rb:37:in `call'
+E, [2022-03-04T12:06:52.455895 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/cli.rb:52:in `perform'
+E, [2022-03-04T12:06:52.455913 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/cli.rb:250:in `test'
+E, [2022-03-04T12:06:52.455931 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/thor-1.2.1/lib/thor/command.rb:27:in `run'
+E, [2022-03-04T12:06:52.455948 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/thor-1.2.1/lib/thor/invocation.rb:127:in `invoke_command'
+E, [2022-03-04T12:06:52.455965 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/thor-1.2.1/lib/thor.rb:392:in `dispatch'
+E, [2022-03-04T12:06:52.455982 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/thor-1.2.1/lib/thor/base.rb:485:in `start'
+E, [2022-03-04T12:06:52.455999 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/bin/kitchen:11:in `block in <top (required)>'
+E, [2022-03-04T12:06:52.456016 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/errors.rb:183:in `with_friendly_errors'
+E, [2022-03-04T12:06:52.456033 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/bin/kitchen:11:in `<top (required)>'
+E, [2022-03-04T12:06:52.456051 #58090] ERROR -- Kitchen: /usr/local/bin/kitchen:383:in `load'
+E, [2022-03-04T12:06:52.456067 #58090] ERROR -- Kitchen: /usr/local/bin/kitchen:383:in `<main>'
+E, [2022-03-04T12:06:52.456084 #58090] ERROR -- Kitchen: ----End Backtrace-----
+E, [2022-03-04T12:06:52.456100 #58090] ERROR -- Kitchen: -Composite Exception--
+E, [2022-03-04T12:06:52.456117 #58090] ERROR -- Kitchen: Class: Kitchen::InstanceFailure
+E, [2022-03-04T12:06:52.456134 #58090] ERROR -- Kitchen: Message: Converge failed on instance <default-ubuntu-2004>.  Please see .kitchen/logs/default-ubuntu-2004.log for more details
+E, [2022-03-04T12:06:52.456161 #58090] ERROR -- Kitchen: ----------------------
+E, [2022-03-04T12:06:52.456177 #58090] ERROR -- Kitchen: ------Backtrace-------
+E, [2022-03-04T12:06:52.456191 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/provisioner/base.rb:100:in `rescue in call'
+E, [2022-03-04T12:06:52.456206 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/provisioner/base.rb:99:in `call'
+E, [2022-03-04T12:06:52.456220 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:419:in `block in converge_action'
+E, [2022-03-04T12:06:52.456234 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:563:in `synchronize_or_call'
+E, [2022-03-04T12:06:52.456248 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:524:in `block in action'
+E, [2022-03-04T12:06:52.456262 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+E, [2022-03-04T12:06:52.456276 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:523:in `action'
+E, [2022-03-04T12:06:52.456290 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:414:in `converge_action'
+E, [2022-03-04T12:06:52.456305 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2022-03-04T12:06:52.456319 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2022-03-04T12:06:52.456333 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2022-03-04T12:06:52.456348 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:390:in `each'
+E, [2022-03-04T12:06:52.456362 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2022-03-04T12:06:52.456376 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:161:in `verify'
+E, [2022-03-04T12:06:52.456390 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:190:in `block in test'
+E, [2022-03-04T12:06:52.456405 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+E, [2022-03-04T12:06:52.456419 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:186:in `test'
+E, [2022-03-04T12:06:52.456433 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/command.rb:195:in `public_send'
+E, [2022-03-04T12:06:52.456447 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2022-03-04T12:06:52.456461 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2022-03-04T12:06:52.456475 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/logging-2.3.0/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2022-03-04T12:06:52.456489 #58090] ERROR -- Kitchen: ----End Backtrace-----
+E, [2022-03-04T12:06:52.456503 #58090] ERROR -- Kitchen: ---Nested Exception---
+E, [2022-03-04T12:06:52.456517 #58090] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2022-03-04T12:06:52.456541 #58090] ERROR -- Kitchen: Message: SSH exited (1) for command: [sudo -E sh -c '
+chef_omnibus_root="/opt/chef"
+chef_omnibus_url="https://omnitruck.chef.io/install.sh"
+install_flags="-v 22.2.807"
+pretty_version="22.2.807"
+sudo_sh="sudo -E sh"
+version="22.2.807"
+
+tmp_stderr="/tmp/stderr";
+
+# capture_tmp_stderr SOURCE
+capture_tmp_stderr() {
+  # spool up $tmp_stderr from all the commands we called
+  if test -f "$tmp_stderr"; then
+    output="`cat $tmp_stderr`";
+    stderr_results="${stderr_results}\nSTDERR from $1:\n\n${output}\n";
+    rm $tmp_stderr;
+  fi
+}
+
+# do_curl URL FILENAME
+do_curl() {
+  echo "Trying curl...";
+  curl -sL -D "$tmp_stderr" "$1" > "$2";
+  ec=$?;
+  # check for 404
+  grep "404 Not Found" "$tmp_stderr" 2>&1 >/dev/null;
+  if test $? -eq 0; then
+    http_404_error "$1";
+  fi
+
+  # check for bad return status or empty output
+  if test $ec -ne 0 || test ! -s "$2"; then
+    capture_tmp_stderr "curl";
+    return 1;
+  else
+    echo "Download complete.";
+    return 0;
+  fi
+}
+
+# do_download URL FILENAME
+do_download() {
+  echo "Downloading ${1} to file ${2}";
+
+  exists wget;
+  if test $? -eq 0; then
+    do_wget "$1" "$2" && return 0;
+  fi
+
+  exists curl;
+  if test $? -eq 0; then
+    do_curl "$1" "$2" && return 0;
+  fi
+
+  exists fetch;
+  if test $? -eq 0; then
+    do_fetch "$1" "$2" && return 0;
+  fi
+
+  exists python;
+  if test $? -eq 0; then
+    do_python "$1" "$2" && return 0;
+  fi
+
+  exists perl;
+  if test $? -eq 0; then
+    do_perl "$1" "$2" && return 0;
+  fi
+
+  unable_to_download "$1" "$2";
+}
+
+# do_fetch URL FILENAME
+do_fetch() {
+  echo "Trying fetch...";
+  fetch -o "$2" "$1" 2>"$tmp_stderr";
+  ec=$?;
+  # check for 404
+  grep "Not Found" "$tmp_stderr" 2>&1 >/dev/null;
+  if test $? -eq 0; then
+    http_404_error "$1";
+  fi
+
+  # check for bad return status or empty output
+  if test $ec -ne 0 || test ! -s "$2"; then
+    capture_tmp_stderr "fetch";
+    return 1;
+  else
+    echo "Download complete.";
+    return 0;
+  fi
+}
+
+# do_perl URL FILENAME
+do_perl() {
+  echo "Trying perl...";
+  perl -e "use LWP::Simple; getprint(\$ARGV[0]);" "$1" > "$2" 2>"$tmp_stderr";
+  ec=$?;
+  # check for 404
+  grep "404 Not Found" "$tmp_stderr" 2>&1 >/dev/null;
+  if test $? -eq 0; then
+    http_404_error "$1";
+  fi
+
+  # check for bad return status or empty output
+  if test $ec -ne 0 || test ! -s "$2"; then
+    capture_tmp_stderr "perl";
+    return 1;
+  else
+    echo "Download complete.";
+    return 0;
+  fi
+}
+
+# do_python URL FILENAME
+do_python() {
+  echo "Trying python...";
+  python -c "import sys,urllib2 ; sys.stdout.write(urllib2.urlopen(sys.argv[1]).read())" "$1" > "$2" 2>"$tmp_stderr";
+  ec=$?;
+  # check for 404
+  grep "HTTP Error 404" "$tmp_stderr" 2>&1 >/dev/null;
+  if test $? -eq 0; then
+    http_404_error "$1";
+  fi
+
+  # check for bad return status or empty output
+  if test $ec -ne 0 || test ! -s "$2"; then
+    capture_tmp_stderr "python";
+    return 1;
+  else
+    echo "Download complete.";
+    return 0;
+  fi
+}
+
+# do_wget URL FILENAME
+do_wget() {
+  echo "Trying wget...";
+  wget -O "$2" "$1" 2>"$tmp_stderr";
+  ec=$?;
+  # check for 404
+  grep "ERROR 404" "$tmp_stderr" 2>&1 >/dev/null;
+  if test $? -eq 0; then
+    http_404_error "$1";
+  fi
+
+  # check for bad return status or empty output
+  if test $ec -ne 0 || test ! -s "$2"; then
+    capture_tmp_stderr "wget";
+    return 1;
+  else
+    echo "Download complete.";
+    return 0;
+  fi
+}
+
+# exists COMMAND
+exists() {
+  if command -v "$1" >/dev/null 2>&1; then
+    return 0;
+  else
+    return 1;
+  fi
+}
+
+# http_404_error URL
+http_404_error() {
+  echo ">>>>>> Downloading ${1} resulted in an HTTP/404, aborting";
+  exit 40;
+}
+
+# should_update_chef ROOT VERSION
+should_update_chef() {
+  if test ! -d "$1"; then
+    return 0;
+  elif test "$2" = "true"; then
+    return 1;
+  elif test "$2" = "latest"; then
+    return 0;
+  fi
+
+  if test -f "${1}/version-manifest.txt"; then
+    chef_version="`head -n 1 ${1}/version-manifest.txt | cut -d \" \" -f 2`";
+  else
+    chef_version="`${1}/bin/chef-solo -v | cut -d \" \" -f 2`";
+  fi
+
+  echo "$chef_version" | grep "^${2}" 2>&1 >/dev/null;
+  if test $? -eq 0; then
+    return 1;
+  else
+    echo "${2}" | grep "^$chef_version" 2>&1 >/dev/null;
+    if test $? -eq 0; then
+      return 1;
+    else
+      return 0;
+    fi
+  fi
+}
+
+# unable_to_download URL FILE
+unable_to_download() {
+  echo "Unable to download $1 to $2, aborting";
+
+  if test "x${stderr_results}" != "x"; then
+    echo "\nDEBUG OUTPUT FOLLOWS:\n${stderr_results}";
+  fi
+
+  exit 10;
+}
+
+# main
+main() {
+  should_update_chef "$chef_omnibus_root" "$version"
+  if test $? -eq 0; then
+    echo "-----> Installing Chef ${pretty_version} package";
+
+    # solaris 10 lacks recent enough credentials, so http url is used
+    platform="`/usr/bin/uname -s 2>/dev/null`";
+    platform_version="`/usr/bin/uname -r 2>/dev/null`";
+    if test "x${platform}" = "xSunOS" && test "x${platform_version}" = "x5.10"; then
+      chef_omnibus_url=`echo "$chef_omnibus_url" | sed -e "s/https/http/"`;
+    fi
+
+    do_download "$chef_omnibus_url" /tmp/install.sh;
+    $sudo_sh /tmp/install.sh $install_flags;
+  else
+    echo "-----> Chef installation detected (${pretty_version})";
+  fi
+}
+
+# augment path in an attempt to find a download program
+PATH="${PATH}:/opt/local/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/sfw/bin";
+export PATH;
+
+main
+']
+E, [2022-03-04T12:06:52.456569 #58090] ERROR -- Kitchen: ----------------------
+E, [2022-03-04T12:06:52.456584 #58090] ERROR -- Kitchen: ------Backtrace-------
+E, [2022-03-04T12:06:52.456610 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/provisioner/base.rb:100:in `rescue in call'
+E, [2022-03-04T12:06:52.456624 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/provisioner/base.rb:99:in `call'
+E, [2022-03-04T12:06:52.456638 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:419:in `block in converge_action'
+E, [2022-03-04T12:06:52.456652 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:563:in `synchronize_or_call'
+E, [2022-03-04T12:06:52.456667 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:524:in `block in action'
+E, [2022-03-04T12:06:52.456681 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+E, [2022-03-04T12:06:52.456695 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:523:in `action'
+E, [2022-03-04T12:06:52.456709 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:414:in `converge_action'
+E, [2022-03-04T12:06:52.456724 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2022-03-04T12:06:52.456738 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2022-03-04T12:06:52.456752 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2022-03-04T12:06:52.456766 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:390:in `each'
+E, [2022-03-04T12:06:52.456780 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2022-03-04T12:06:52.456795 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:161:in `verify'
+E, [2022-03-04T12:06:52.456809 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:190:in `block in test'
+E, [2022-03-04T12:06:52.456832 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+E, [2022-03-04T12:06:52.456847 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:186:in `test'
+E, [2022-03-04T12:06:52.456861 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/command.rb:195:in `public_send'
+E, [2022-03-04T12:06:52.456875 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2022-03-04T12:06:52.456890 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2022-03-04T12:06:52.456904 #58090] ERROR -- Kitchen: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/logging-2.3.0/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2022-03-04T12:06:52.456918 #58090] ERROR -- Kitchen: ----End Backtrace-----

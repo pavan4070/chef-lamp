@@ -1,0 +1,604 @@
+I, [2022-03-04T12:05:16.815139 #58090]  INFO -- default-ubuntu-2004: -----> Cleaning up any prior instances of <default-ubuntu-2004>
+I, [2022-03-04T12:05:16.815589 #58090]  INFO -- default-ubuntu-2004: -----> Destroying <default-ubuntu-2004>...
+I, [2022-03-04T12:05:19.010245 #58090]  INFO -- default-ubuntu-2004: Waited 0/300s for instance <i-0d60acb715747daac> to terminate.
+I, [2022-03-04T12:05:24.675664 #58090]  INFO -- default-ubuntu-2004: Waited 5/300s for instance <i-0d60acb715747daac> to terminate.
+I, [2022-03-04T12:05:30.949431 #58090]  INFO -- default-ubuntu-2004: Waited 10/300s for instance <i-0d60acb715747daac> to terminate.
+I, [2022-03-04T12:05:37.392028 #58090]  INFO -- default-ubuntu-2004: Waited 15/300s for instance <i-0d60acb715747daac> to terminate.
+I, [2022-03-04T12:05:43.905994 #58090]  INFO -- default-ubuntu-2004: Waited 20/300s for instance <i-0d60acb715747daac> to terminate.
+I, [2022-03-04T12:05:50.282821 #58090]  INFO -- default-ubuntu-2004: Waited 25/300s for instance <i-0d60acb715747daac> to terminate.
+I, [2022-03-04T12:05:51.571702 #58090]  INFO -- default-ubuntu-2004: EC2 instance <i-0d60acb715747daac> destroyed.
+I, [2022-03-04T12:05:51.571810 #58090]  INFO -- default-ubuntu-2004: Removing automatic security group sg-0b220e356f68cf680
+I, [2022-03-04T12:05:52.472520 #58090]  INFO -- default-ubuntu-2004: Removing automatic key pair kitchen-defaultubuntu2004-pavanpothakamuri-APACM4089-2022-03-04T06:31:34Z-bw23hkp9
+I, [2022-03-04T12:05:52.902335 #58090]  INFO -- default-ubuntu-2004: Finished destroying <default-ubuntu-2004> (0m36.09s).
+I, [2022-03-04T12:05:52.902759 #58090]  INFO -- default-ubuntu-2004: -----> Testing <default-ubuntu-2004>
+I, [2022-03-04T12:05:52.902891 #58090]  INFO -- default-ubuntu-2004: -----> Creating <default-ubuntu-2004>...
+I, [2022-03-04T12:05:58.454293 #58090]  INFO -- default-ubuntu-2004: instance_type not specified. Using free tier t2.micro instance ...
+I, [2022-03-04T12:05:58.454472 #58090]  INFO -- default-ubuntu-2004: Detected platform: ubuntu version 20.04 on x86_64. Instance Type: t2.micro. Default username: ubuntu (default).
+I, [2022-03-04T12:05:58.454636 #58090]  INFO -- default-ubuntu-2004: If you are not using an account that qualifies under the AWS
+free-tier, you may be charged to run these suites. The charge
+should be minimal, but neither Test Kitchen nor its maintainers
+are responsible for your incurred costs.
+
+I, [2022-03-04T12:05:59.656119 #58090]  INFO -- default-ubuntu-2004: Created automatic security group sg-070abfdae05b20e46
+I, [2022-03-04T12:06:00.763053 #58090]  INFO -- default-ubuntu-2004: Created automatic key pair kitchen-defaultubuntu2004-pavanpothakamuri-APACM4089-2022-03-04T06:36:00Z-q4ir3tig
+I, [2022-03-04T12:06:03.626293 #58090]  INFO -- default-ubuntu-2004: Instance <i-0a23162bbbc87f2dd> requested.
+I, [2022-03-04T12:06:03.626514 #58090]  INFO -- default-ubuntu-2004: Polling AWS for existence, attempt 0...
+I, [2022-03-04T12:06:04.032602 #58090]  INFO -- default-ubuntu-2004: EC2 instance <i-0a23162bbbc87f2dd> created.
+I, [2022-03-04T12:06:04.032907 #58090]  INFO -- default-ubuntu-2004: Waited 0/300s for instance <i-0a23162bbbc87f2dd> to become ready.
+I, [2022-03-04T12:06:09.739480 #58090]  INFO -- default-ubuntu-2004: Waited 5/300s for instance <i-0a23162bbbc87f2dd> to become ready.
+I, [2022-03-04T12:06:16.374072 #58090]  INFO -- default-ubuntu-2004: Waited 10/300s for instance <i-0a23162bbbc87f2dd> to become ready.
+I, [2022-03-04T12:06:23.084394 #58090]  INFO -- default-ubuntu-2004: Waited 15/300s for instance <i-0a23162bbbc87f2dd> to become ready.
+I, [2022-03-04T12:06:30.082142 #58090]  INFO -- default-ubuntu-2004: Waited 20/300s for instance <i-0a23162bbbc87f2dd> to become ready.
+I, [2022-03-04T12:06:31.459811 #58090]  INFO -- default-ubuntu-2004: EC2 instance <i-0a23162bbbc87f2dd> ready (hostname: ec2-44-201-133-78.compute-1.amazonaws.com).
+I, [2022-03-04T12:06:32.796711 #58090]  INFO -- default-ubuntu-2004: Waiting for SSH service on ec2-44-201-133-78.compute-1.amazonaws.com:22, retrying in 3 seconds
+I, [2022-03-04T12:06:37.116418 #58090]  INFO -- default-ubuntu-2004: Waiting for SSH service on ec2-44-201-133-78.compute-1.amazonaws.com:22, retrying in 3 seconds
+I, [2022-03-04T12:06:45.258001 #58090]  INFO -- default-ubuntu-2004: [SSH] Established
+I, [2022-03-04T12:06:46.223103 #58090]  INFO -- default-ubuntu-2004: Finished creating <default-ubuntu-2004> (0m53.32s).
+I, [2022-03-04T12:06:46.223322 #58090]  INFO -- default-ubuntu-2004: -----> Converging <default-ubuntu-2004>...
+I, [2022-03-04T12:06:46.295684 #58090]  INFO -- default-ubuntu-2004: Preparing files for transfer
+I, [2022-03-04T12:06:46.295816 #58090]  INFO -- default-ubuntu-2004: Preparing dna.json
+I, [2022-03-04T12:06:46.296220 #58090]  INFO -- default-ubuntu-2004: Resolving cookbook dependencies with Berkshelf 7.2.2...
+I, [2022-03-04T12:06:51.425276 #58090]  INFO -- default-ubuntu-2004: Removing non-cookbook files before transfer
+I, [2022-03-04T12:06:51.457071 #58090]  INFO -- default-ubuntu-2004: Preparing data_bags
+I, [2022-03-04T12:06:51.458202 #58090]  INFO -- default-ubuntu-2004: Preparing validation.pem
+I, [2022-03-04T12:06:51.458599 #58090]  INFO -- default-ubuntu-2004: Preparing client.rb
+I, [2022-03-04T12:06:52.086120 #58090]  INFO -- default-ubuntu-2004: -----> Installing Chef 22.2.807 package
+I, [2022-03-04T12:06:52.087387 #58090]  INFO -- default-ubuntu-2004: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+I, [2022-03-04T12:06:52.087628 #58090]  INFO -- default-ubuntu-2004: Trying wget...
+I, [2022-03-04T12:06:52.125570 #58090]  INFO -- default-ubuntu-2004: Download complete.
+I, [2022-03-04T12:06:52.144182 #58090]  INFO -- default-ubuntu-2004: ubuntu 20.04 x86_64
+I, [2022-03-04T12:06:52.379513 #58090]  INFO -- default-ubuntu-2004: Getting information for chef stable 22.2.807 for ubuntu...
+I, [2022-03-04T12:06:52.379985 #58090]  INFO -- default-ubuntu-2004: downloading https://omnitruck.chef.io/stable/chef/metadata?v=22.2.807&p=ubuntu&pv=20.04&m=x86_64
+I, [2022-03-04T12:06:52.380290 #58090]  INFO -- default-ubuntu-2004:   to file /tmp/install.sh.1269/metadata.txt
+I, [2022-03-04T12:06:52.380532 #58090]  INFO -- default-ubuntu-2004: trying wget...
+I, [2022-03-04T12:06:52.402778 #58090]  INFO -- default-ubuntu-2004: ERROR 404
+I, [2022-03-04T12:06:52.402931 #58090]  INFO -- default-ubuntu-2004: Omnitruck artifact does not exist for version 22.2.807 on platform ubuntu
+I, [2022-03-04T12:06:52.402990 #58090]  INFO -- default-ubuntu-2004: 
+I, [2022-03-04T12:06:52.403310 #58090]  INFO -- default-ubuntu-2004: Either this means:
+I, [2022-03-04T12:06:52.403373 #58090]  INFO -- default-ubuntu-2004:    - We do not support ubuntu
+I, [2022-03-04T12:06:52.403419 #58090]  INFO -- default-ubuntu-2004:    - We do not have an artifact for 22.2.807
+I, [2022-03-04T12:06:52.403469 #58090]  INFO -- default-ubuntu-2004: 
+I, [2022-03-04T12:06:52.403511 #58090]  INFO -- default-ubuntu-2004: This is often the latter case due to running a prerelease or RC version of Chef
+I, [2022-03-04T12:06:52.403552 #58090]  INFO -- default-ubuntu-2004: or a gem version which was only pushed to rubygems and not omnitruck.
+I, [2022-03-04T12:06:52.403592 #58090]  INFO -- default-ubuntu-2004: 
+I, [2022-03-04T12:06:52.403893 #58090]  INFO -- default-ubuntu-2004: You may be able to set your knife[:bootstrap_version] to the most recent stable
+I, [2022-03-04T12:06:52.403950 #58090]  INFO -- default-ubuntu-2004: release of Chef to fix this problem (or the most recent stable major version number).
+I, [2022-03-04T12:06:52.403994 #58090]  INFO -- default-ubuntu-2004: 
+I, [2022-03-04T12:06:52.404042 #58090]  INFO -- default-ubuntu-2004: In order to test the version parameter, adventurous users may take the Metadata URL
+I, [2022-03-04T12:06:52.404263 #58090]  INFO -- default-ubuntu-2004: below and modify the '&v=<number>' parameter until you successfully get a URL that
+I, [2022-03-04T12:06:52.404324 #58090]  INFO -- default-ubuntu-2004: does not 404 (e.g. via curl or wget).  You should be able to use '&v=11' or '&v=12'
+I, [2022-03-04T12:06:52.404369 #58090]  INFO -- default-ubuntu-2004: successfully.
+I, [2022-03-04T12:06:52.404409 #58090]  INFO -- default-ubuntu-2004: 
+I, [2022-03-04T12:06:52.404473 #58090]  INFO -- default-ubuntu-2004: If you cannot fix this problem by setting the bootstrap_version, it probably means
+I, [2022-03-04T12:06:52.404509 #58090]  INFO -- default-ubuntu-2004: that ubuntu is not supported.
+I, [2022-03-04T12:06:52.404541 #58090]  INFO -- default-ubuntu-2004: 
+I, [2022-03-04T12:06:52.404952 #58090]  INFO -- default-ubuntu-2004: Metadata URL: https://omnitruck.chef.io/stable/chef/metadata?v=22.2.807&p=ubuntu&pv=20.04&m=x86_64
+E, [2022-03-04T12:06:52.453818 #58090] ERROR -- default-ubuntu-2004: Converge failed on instance <default-ubuntu-2004>.
+E, [2022-03-04T12:06:52.453930 #58090] ERROR -- default-ubuntu-2004: ------Exception-------
+E, [2022-03-04T12:06:52.453953 #58090] ERROR -- default-ubuntu-2004: Class: Kitchen::ActionFailed
+E, [2022-03-04T12:06:52.453969 #58090] ERROR -- default-ubuntu-2004: Message: SSH exited (1) for command: [sudo -E sh -c '
+chef_omnibus_root="/opt/chef"
+chef_omnibus_url="https://omnitruck.chef.io/install.sh"
+install_flags="-v 22.2.807"
+pretty_version="22.2.807"
+sudo_sh="sudo -E sh"
+version="22.2.807"
+
+tmp_stderr="/tmp/stderr";
+
+# capture_tmp_stderr SOURCE
+capture_tmp_stderr() {
+  # spool up $tmp_stderr from all the commands we called
+  if test -f "$tmp_stderr"; then
+    output="`cat $tmp_stderr`";
+    stderr_results="${stderr_results}\nSTDERR from $1:\n\n${output}\n";
+    rm $tmp_stderr;
+  fi
+}
+
+# do_curl URL FILENAME
+do_curl() {
+  echo "Trying curl...";
+  curl -sL -D "$tmp_stderr" "$1" > "$2";
+  ec=$?;
+  # check for 404
+  grep "404 Not Found" "$tmp_stderr" 2>&1 >/dev/null;
+  if test $? -eq 0; then
+    http_404_error "$1";
+  fi
+
+  # check for bad return status or empty output
+  if test $ec -ne 0 || test ! -s "$2"; then
+    capture_tmp_stderr "curl";
+    return 1;
+  else
+    echo "Download complete.";
+    return 0;
+  fi
+}
+
+# do_download URL FILENAME
+do_download() {
+  echo "Downloading ${1} to file ${2}";
+
+  exists wget;
+  if test $? -eq 0; then
+    do_wget "$1" "$2" && return 0;
+  fi
+
+  exists curl;
+  if test $? -eq 0; then
+    do_curl "$1" "$2" && return 0;
+  fi
+
+  exists fetch;
+  if test $? -eq 0; then
+    do_fetch "$1" "$2" && return 0;
+  fi
+
+  exists python;
+  if test $? -eq 0; then
+    do_python "$1" "$2" && return 0;
+  fi
+
+  exists perl;
+  if test $? -eq 0; then
+    do_perl "$1" "$2" && return 0;
+  fi
+
+  unable_to_download "$1" "$2";
+}
+
+# do_fetch URL FILENAME
+do_fetch() {
+  echo "Trying fetch...";
+  fetch -o "$2" "$1" 2>"$tmp_stderr";
+  ec=$?;
+  # check for 404
+  grep "Not Found" "$tmp_stderr" 2>&1 >/dev/null;
+  if test $? -eq 0; then
+    http_404_error "$1";
+  fi
+
+  # check for bad return status or empty output
+  if test $ec -ne 0 || test ! -s "$2"; then
+    capture_tmp_stderr "fetch";
+    return 1;
+  else
+    echo "Download complete.";
+    return 0;
+  fi
+}
+
+# do_perl URL FILENAME
+do_perl() {
+  echo "Trying perl...";
+  perl -e "use LWP::Simple; getprint(\$ARGV[0]);" "$1" > "$2" 2>"$tmp_stderr";
+  ec=$?;
+  # check for 404
+  grep "404 Not Found" "$tmp_stderr" 2>&1 >/dev/null;
+  if test $? -eq 0; then
+    http_404_error "$1";
+  fi
+
+  # check for bad return status or empty output
+  if test $ec -ne 0 || test ! -s "$2"; then
+    capture_tmp_stderr "perl";
+    return 1;
+  else
+    echo "Download complete.";
+    return 0;
+  fi
+}
+
+# do_python URL FILENAME
+do_python() {
+  echo "Trying python...";
+  python -c "import sys,urllib2 ; sys.stdout.write(urllib2.urlopen(sys.argv[1]).read())" "$1" > "$2" 2>"$tmp_stderr";
+  ec=$?;
+  # check for 404
+  grep "HTTP Error 404" "$tmp_stderr" 2>&1 >/dev/null;
+  if test $? -eq 0; then
+    http_404_error "$1";
+  fi
+
+  # check for bad return status or empty output
+  if test $ec -ne 0 || test ! -s "$2"; then
+    capture_tmp_stderr "python";
+    return 1;
+  else
+    echo "Download complete.";
+    return 0;
+  fi
+}
+
+# do_wget URL FILENAME
+do_wget() {
+  echo "Trying wget...";
+  wget -O "$2" "$1" 2>"$tmp_stderr";
+  ec=$?;
+  # check for 404
+  grep "ERROR 404" "$tmp_stderr" 2>&1 >/dev/null;
+  if test $? -eq 0; then
+    http_404_error "$1";
+  fi
+
+  # check for bad return status or empty output
+  if test $ec -ne 0 || test ! -s "$2"; then
+    capture_tmp_stderr "wget";
+    return 1;
+  else
+    echo "Download complete.";
+    return 0;
+  fi
+}
+
+# exists COMMAND
+exists() {
+  if command -v "$1" >/dev/null 2>&1; then
+    return 0;
+  else
+    return 1;
+  fi
+}
+
+# http_404_error URL
+http_404_error() {
+  echo ">>>>>> Downloading ${1} resulted in an HTTP/404, aborting";
+  exit 40;
+}
+
+# should_update_chef ROOT VERSION
+should_update_chef() {
+  if test ! -d "$1"; then
+    return 0;
+  elif test "$2" = "true"; then
+    return 1;
+  elif test "$2" = "latest"; then
+    return 0;
+  fi
+
+  if test -f "${1}/version-manifest.txt"; then
+    chef_version="`head -n 1 ${1}/version-manifest.txt | cut -d \" \" -f 2`";
+  else
+    chef_version="`${1}/bin/chef-solo -v | cut -d \" \" -f 2`";
+  fi
+
+  echo "$chef_version" | grep "^${2}" 2>&1 >/dev/null;
+  if test $? -eq 0; then
+    return 1;
+  else
+    echo "${2}" | grep "^$chef_version" 2>&1 >/dev/null;
+    if test $? -eq 0; then
+      return 1;
+    else
+      return 0;
+    fi
+  fi
+}
+
+# unable_to_download URL FILE
+unable_to_download() {
+  echo "Unable to download $1 to $2, aborting";
+
+  if test "x${stderr_results}" != "x"; then
+    echo "\nDEBUG OUTPUT FOLLOWS:\n${stderr_results}";
+  fi
+
+  exit 10;
+}
+
+# main
+main() {
+  should_update_chef "$chef_omnibus_root" "$version"
+  if test $? -eq 0; then
+    echo "-----> Installing Chef ${pretty_version} package";
+
+    # solaris 10 lacks recent enough credentials, so http url is used
+    platform="`/usr/bin/uname -s 2>/dev/null`";
+    platform_version="`/usr/bin/uname -r 2>/dev/null`";
+    if test "x${platform}" = "xSunOS" && test "x${platform_version}" = "x5.10"; then
+      chef_omnibus_url=`echo "$chef_omnibus_url" | sed -e "s/https/http/"`;
+    fi
+
+    do_download "$chef_omnibus_url" /tmp/install.sh;
+    $sudo_sh /tmp/install.sh $install_flags;
+  else
+    echo "-----> Chef installation detected (${pretty_version})";
+  fi
+}
+
+# augment path in an attempt to find a download program
+PATH="${PATH}:/opt/local/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/sfw/bin";
+export PATH;
+
+main
+']
+E, [2022-03-04T12:06:52.453998 #58090] ERROR -- default-ubuntu-2004: ----------------------
+E, [2022-03-04T12:06:52.454014 #58090] ERROR -- default-ubuntu-2004: ------Backtrace-------
+E, [2022-03-04T12:06:52.454027 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/provisioner/base.rb:100:in `rescue in call'
+E, [2022-03-04T12:06:52.454041 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/provisioner/base.rb:99:in `call'
+E, [2022-03-04T12:06:52.454055 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:419:in `block in converge_action'
+E, [2022-03-04T12:06:52.454068 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:563:in `synchronize_or_call'
+E, [2022-03-04T12:06:52.454082 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:524:in `block in action'
+E, [2022-03-04T12:06:52.454095 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+E, [2022-03-04T12:06:52.454108 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:523:in `action'
+E, [2022-03-04T12:06:52.454121 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:414:in `converge_action'
+E, [2022-03-04T12:06:52.454134 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2022-03-04T12:06:52.454147 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2022-03-04T12:06:52.454174 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2022-03-04T12:06:52.454188 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:390:in `each'
+E, [2022-03-04T12:06:52.454201 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2022-03-04T12:06:52.454214 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:161:in `verify'
+E, [2022-03-04T12:06:52.454228 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:190:in `block in test'
+E, [2022-03-04T12:06:52.454241 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+E, [2022-03-04T12:06:52.454254 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:186:in `test'
+E, [2022-03-04T12:06:52.454267 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/command.rb:195:in `public_send'
+E, [2022-03-04T12:06:52.454280 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2022-03-04T12:06:52.454293 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2022-03-04T12:06:52.454306 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/logging-2.3.0/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2022-03-04T12:06:52.454320 #58090] ERROR -- default-ubuntu-2004: ----End Backtrace-----
+E, [2022-03-04T12:06:52.454332 #58090] ERROR -- default-ubuntu-2004: ---Nested Exception---
+E, [2022-03-04T12:06:52.454345 #58090] ERROR -- default-ubuntu-2004: Class: Kitchen::Transport::SshFailed
+E, [2022-03-04T12:06:52.454357 #58090] ERROR -- default-ubuntu-2004: Message: SSH exited (1) for command: [sudo -E sh -c '
+chef_omnibus_root="/opt/chef"
+chef_omnibus_url="https://omnitruck.chef.io/install.sh"
+install_flags="-v 22.2.807"
+pretty_version="22.2.807"
+sudo_sh="sudo -E sh"
+version="22.2.807"
+
+tmp_stderr="/tmp/stderr";
+
+# capture_tmp_stderr SOURCE
+capture_tmp_stderr() {
+  # spool up $tmp_stderr from all the commands we called
+  if test -f "$tmp_stderr"; then
+    output="`cat $tmp_stderr`";
+    stderr_results="${stderr_results}\nSTDERR from $1:\n\n${output}\n";
+    rm $tmp_stderr;
+  fi
+}
+
+# do_curl URL FILENAME
+do_curl() {
+  echo "Trying curl...";
+  curl -sL -D "$tmp_stderr" "$1" > "$2";
+  ec=$?;
+  # check for 404
+  grep "404 Not Found" "$tmp_stderr" 2>&1 >/dev/null;
+  if test $? -eq 0; then
+    http_404_error "$1";
+  fi
+
+  # check for bad return status or empty output
+  if test $ec -ne 0 || test ! -s "$2"; then
+    capture_tmp_stderr "curl";
+    return 1;
+  else
+    echo "Download complete.";
+    return 0;
+  fi
+}
+
+# do_download URL FILENAME
+do_download() {
+  echo "Downloading ${1} to file ${2}";
+
+  exists wget;
+  if test $? -eq 0; then
+    do_wget "$1" "$2" && return 0;
+  fi
+
+  exists curl;
+  if test $? -eq 0; then
+    do_curl "$1" "$2" && return 0;
+  fi
+
+  exists fetch;
+  if test $? -eq 0; then
+    do_fetch "$1" "$2" && return 0;
+  fi
+
+  exists python;
+  if test $? -eq 0; then
+    do_python "$1" "$2" && return 0;
+  fi
+
+  exists perl;
+  if test $? -eq 0; then
+    do_perl "$1" "$2" && return 0;
+  fi
+
+  unable_to_download "$1" "$2";
+}
+
+# do_fetch URL FILENAME
+do_fetch() {
+  echo "Trying fetch...";
+  fetch -o "$2" "$1" 2>"$tmp_stderr";
+  ec=$?;
+  # check for 404
+  grep "Not Found" "$tmp_stderr" 2>&1 >/dev/null;
+  if test $? -eq 0; then
+    http_404_error "$1";
+  fi
+
+  # check for bad return status or empty output
+  if test $ec -ne 0 || test ! -s "$2"; then
+    capture_tmp_stderr "fetch";
+    return 1;
+  else
+    echo "Download complete.";
+    return 0;
+  fi
+}
+
+# do_perl URL FILENAME
+do_perl() {
+  echo "Trying perl...";
+  perl -e "use LWP::Simple; getprint(\$ARGV[0]);" "$1" > "$2" 2>"$tmp_stderr";
+  ec=$?;
+  # check for 404
+  grep "404 Not Found" "$tmp_stderr" 2>&1 >/dev/null;
+  if test $? -eq 0; then
+    http_404_error "$1";
+  fi
+
+  # check for bad return status or empty output
+  if test $ec -ne 0 || test ! -s "$2"; then
+    capture_tmp_stderr "perl";
+    return 1;
+  else
+    echo "Download complete.";
+    return 0;
+  fi
+}
+
+# do_python URL FILENAME
+do_python() {
+  echo "Trying python...";
+  python -c "import sys,urllib2 ; sys.stdout.write(urllib2.urlopen(sys.argv[1]).read())" "$1" > "$2" 2>"$tmp_stderr";
+  ec=$?;
+  # check for 404
+  grep "HTTP Error 404" "$tmp_stderr" 2>&1 >/dev/null;
+  if test $? -eq 0; then
+    http_404_error "$1";
+  fi
+
+  # check for bad return status or empty output
+  if test $ec -ne 0 || test ! -s "$2"; then
+    capture_tmp_stderr "python";
+    return 1;
+  else
+    echo "Download complete.";
+    return 0;
+  fi
+}
+
+# do_wget URL FILENAME
+do_wget() {
+  echo "Trying wget...";
+  wget -O "$2" "$1" 2>"$tmp_stderr";
+  ec=$?;
+  # check for 404
+  grep "ERROR 404" "$tmp_stderr" 2>&1 >/dev/null;
+  if test $? -eq 0; then
+    http_404_error "$1";
+  fi
+
+  # check for bad return status or empty output
+  if test $ec -ne 0 || test ! -s "$2"; then
+    capture_tmp_stderr "wget";
+    return 1;
+  else
+    echo "Download complete.";
+    return 0;
+  fi
+}
+
+# exists COMMAND
+exists() {
+  if command -v "$1" >/dev/null 2>&1; then
+    return 0;
+  else
+    return 1;
+  fi
+}
+
+# http_404_error URL
+http_404_error() {
+  echo ">>>>>> Downloading ${1} resulted in an HTTP/404, aborting";
+  exit 40;
+}
+
+# should_update_chef ROOT VERSION
+should_update_chef() {
+  if test ! -d "$1"; then
+    return 0;
+  elif test "$2" = "true"; then
+    return 1;
+  elif test "$2" = "latest"; then
+    return 0;
+  fi
+
+  if test -f "${1}/version-manifest.txt"; then
+    chef_version="`head -n 1 ${1}/version-manifest.txt | cut -d \" \" -f 2`";
+  else
+    chef_version="`${1}/bin/chef-solo -v | cut -d \" \" -f 2`";
+  fi
+
+  echo "$chef_version" | grep "^${2}" 2>&1 >/dev/null;
+  if test $? -eq 0; then
+    return 1;
+  else
+    echo "${2}" | grep "^$chef_version" 2>&1 >/dev/null;
+    if test $? -eq 0; then
+      return 1;
+    else
+      return 0;
+    fi
+  fi
+}
+
+# unable_to_download URL FILE
+unable_to_download() {
+  echo "Unable to download $1 to $2, aborting";
+
+  if test "x${stderr_results}" != "x"; then
+    echo "\nDEBUG OUTPUT FOLLOWS:\n${stderr_results}";
+  fi
+
+  exit 10;
+}
+
+# main
+main() {
+  should_update_chef "$chef_omnibus_root" "$version"
+  if test $? -eq 0; then
+    echo "-----> Installing Chef ${pretty_version} package";
+
+    # solaris 10 lacks recent enough credentials, so http url is used
+    platform="`/usr/bin/uname -s 2>/dev/null`";
+    platform_version="`/usr/bin/uname -r 2>/dev/null`";
+    if test "x${platform}" = "xSunOS" && test "x${platform_version}" = "x5.10"; then
+      chef_omnibus_url=`echo "$chef_omnibus_url" | sed -e "s/https/http/"`;
+    fi
+
+    do_download "$chef_omnibus_url" /tmp/install.sh;
+    $sudo_sh /tmp/install.sh $install_flags;
+  else
+    echo "-----> Chef installation detected (${pretty_version})";
+  fi
+}
+
+# augment path in an attempt to find a download program
+PATH="${PATH}:/opt/local/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/sfw/bin";
+export PATH;
+
+main
+']
+E, [2022-03-04T12:06:52.454380 #58090] ERROR -- default-ubuntu-2004: ----------------------
+E, [2022-03-04T12:06:52.454404 #58090] ERROR -- default-ubuntu-2004: ------Backtrace-------
+E, [2022-03-04T12:06:52.454418 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/provisioner/base.rb:100:in `rescue in call'
+E, [2022-03-04T12:06:52.454440 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/provisioner/base.rb:99:in `call'
+E, [2022-03-04T12:06:52.454454 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:419:in `block in converge_action'
+E, [2022-03-04T12:06:52.454467 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:563:in `synchronize_or_call'
+E, [2022-03-04T12:06:52.454480 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:524:in `block in action'
+E, [2022-03-04T12:06:52.454493 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+E, [2022-03-04T12:06:52.454506 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:523:in `action'
+E, [2022-03-04T12:06:52.454522 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:414:in `converge_action'
+E, [2022-03-04T12:06:52.454536 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2022-03-04T12:06:52.454549 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2022-03-04T12:06:52.454562 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2022-03-04T12:06:52.454575 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:390:in `each'
+E, [2022-03-04T12:06:52.454588 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2022-03-04T12:06:52.454601 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:161:in `verify'
+E, [2022-03-04T12:06:52.454614 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:190:in `block in test'
+E, [2022-03-04T12:06:52.454626 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+E, [2022-03-04T12:06:52.454640 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/instance.rb:186:in `test'
+E, [2022-03-04T12:06:52.454653 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/command.rb:195:in `public_send'
+E, [2022-03-04T12:06:52.454666 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2022-03-04T12:06:52.454678 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.2.2/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2022-03-04T12:06:52.454691 #58090] ERROR -- default-ubuntu-2004: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/logging-2.3.0/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2022-03-04T12:06:52.454704 #58090] ERROR -- default-ubuntu-2004: ----End Backtrace-----

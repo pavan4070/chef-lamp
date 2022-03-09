@@ -1,0 +1,37 @@
+DEPENDENCIES
+  lamp
+    path: .
+    metadata: true
+
+GRAPH
+  apache2 (8.14.2)
+    yum-epel (>= 0.0.0)
+  apparmor (4.1.0)
+    line (>= 0.0.0)
+  build-essential (8.2.1)
+    mingw (>= 1.1)
+    seven_zip (>= 0.0.0)
+  database (6.1.1)
+    postgresql (>= 1.0.0)
+  lamp (1.1.0)
+    apache2 (~> 8.14.2)
+    database (~> 6.1)
+    mysql (~> 11.0.4)
+    mysql2_chef_gem (~> 2.0)
+  line (4.4.4)
+  mariadb (5.2.3)
+    selinux (>= 6.0)
+  mingw (2.1.4)
+    seven_zip (>= 0.0.0)
+  mysql (11.0.4)
+    apparmor (>= 0.0.0)
+  mysql2_chef_gem (2.1.0)
+    build-essential (>= 2.4.0)
+    mariadb (>= 0.0.0)
+    mysql (>= 8.2.0)
+  postgresql (10.0.1)
+    yum (>= 7.2.0)
+  selinux (6.0.4)
+  seven_zip (4.2.2)
+  yum (7.3.2)
+  yum-epel (4.4.1)
