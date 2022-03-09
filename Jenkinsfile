@@ -1,5 +1,5 @@
 pipeline {
-    agent 
+    agent none 
     stages {
         stage('Update Ubuntu') {
             steps {
@@ -13,15 +13,15 @@ pipeline {
                     if (chefdkExists) {
                         echo 'Skipping Chef install...already installed'
                     }else{
-                        sh 'wget https://packages.chef.io/files/stable/chefdk/3.9.0/ubuntu/16.04/chefdk_3.9.0-1_amd64.deb'
-                        sh 'sudo dpkg -i chefdk_3.9.0-1_amd64.deb'
+                        sh 'wget https://packages.chef.io/files/stable/chef-workstation/21.10.640/ubuntu/20.04/chef-workstation_21.10.640-1_amd64.deb'
+                        sh 'sudo dpkg -i chef-workstation_21.10.640-1_amd64.deb'
                     }
                 }
             }
         }
         stage('Download Cookbook') {
             steps {
-                git credentialsId: 'github-creds', url: 'git@github.com:technotrainertm1/apache.git'
+                git credentialsId: 'github-creds', url: 'https://github.com/pavan4070/chef-lamp.git'
             }
         }
         stage('Install Docker ') {
