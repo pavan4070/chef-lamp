@@ -44,7 +44,19 @@ pipeline {
             }
         }
         
-       
+   stage('Upload Cookbook to Chef Server, Converge Nodes') {
+            steps {
+                withCredentials([zip(credentialsId: 'chef-identity', variable: 'CHEFREPO')]) {
+                    sh 'mkdir -p $CHEFREPO/chef-repo/cookbooks/lamp'
+                    sh 'sudo rm -rf $WORKSPACE/Berksfile.lock'
+                    sh 'mv $WORKSPACE/* $CHEFREPO/chef-repo/cookbooks/lamp'
+                    sh "knife cookbook upload lamp --force -o $CHEFREPO/chef-repo/cookbooks -c $CHEFREPO/chef-repo/.chef/config.rb"
+                    withCredentials([sshUserPrivateKey(credentialsId: 'node-key', keyFileVariable: 'AGENT_SSHKEY', passphraseVariable: '', usernameVariable: '')]) {
+                        sh "knife ssh 'name:lamp' -x ubuntu -i $AGENT_SSHKEY 'sudo chef-client' -c $CHEFREPO/chef-repo/.chef/config.rb"      
+                    }
+                }
+            }    
+}
 }
 }
 
