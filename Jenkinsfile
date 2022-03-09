@@ -50,7 +50,10 @@ pipeline {
                     sh 'mkdir -p $CHEFREPO/chef-repo/cookbooks/lamp'
                     sh 'sudo rm -rf $WORKSPACE/Berksfile.lock'
                     sh 'mv $WORKSPACE/* $CHEFREPO/chef-repo/cookbooks/lamp'
-                    sh "knife cookbook upload lamp --force -o $CHEFREPO/chef-repo/cookbooks -c $CHEFREPO/chef-repo/.chef/config.rb"
+                    sh 'cd $CHEFREPO/chef-repo/cookbooks/lamp'
+		    sh 'chef install'
+		    sh 'chef push lamp Policyfile.lock.json'	
+                 
                     withCredentials([sshUserPrivateKey(credentialsId: 'node-key', keyFileVariable: 'AGENT_SSHKEY', passphraseVariable: '', usernameVariable: '')]) {
                         sh "knife ssh 'name:lamp' -x ubuntu -i $AGENT_SSHKEY 'sudo chef-client' -c $CHEFREPO/chef-repo/.chef/config.rb"      
                     }
