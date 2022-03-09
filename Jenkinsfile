@@ -50,7 +50,7 @@ pipeline {
                     sh 'mkdir -p $CHEFREPO/chef-repo/cookbooks/lamp'
                     sh 'sudo rm -rf $WORKSPACE/Berksfile.lock'
                     sh 'mv $WORKSPACE/* $CHEFREPO/chef-repo/cookbooks/lamp'
-                    sh 'cd $CHEFREPO/chef-repo/cookbooks/lamp'
+                  
 		    sh 'knife node policy set lamp lamp lamp'
 					   
 		 	
