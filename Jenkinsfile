@@ -54,9 +54,8 @@ pipeline {
                     sh 'mv $WORKSPACE/* $CHEFREPO/chef-repo/cookbooks/lamp'
                     sh 'cd /var/lib/jenkins/workspace/'  
 		    sh 'knife node policy set lamp lamp lamp'
-    
-                     sshagent(['keypair'] {
-                        sh "knife ssh 'name:lamp' 'sudo chef-client' -c $CHEFREPO/chef-repo/.chef/config.rb"      
+               withCredentials([sshUserPrivateKey(credentialsId: 'keypair', keyFileVariable: 'AGENT_SSHKEY', passphraseVariable: '', usernameVariable: '')]) {
+                        sh "knife ssh 'role:webserver' -x ubuntu -i $AGENT_SSHKEY 'sudo chef-client' -c /var/lib/jenkins/workspace/.chef/config.rb"      
                     }
                 }
             }    
