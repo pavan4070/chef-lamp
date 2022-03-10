@@ -52,7 +52,7 @@ pipeline {
                     sh 'echo $CHEFREPO'
                     sh 'sudo rm -rf $WORKSPACE/Berksfile.lock'
                     sh 'mv $WORKSPACE/* $CHEFREPO/chef-repo/cookbooks/lamp'
-                    sh 'cd /etc/chef/'  
+                    sh 'cd ~/chef-repo/'  
 		    sh 'knife node policy set lamp lamp lamp'
 					   
 		 	
