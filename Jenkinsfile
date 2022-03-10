@@ -43,6 +43,17 @@ pipeline {
                 }
             }
         }
+stage('Install Ruby and Test Kitchen') {
+            steps {
+                sh 'sudo apt-get install -y rubygems ruby-dev'
+                sh 'chef gem install kitchen-docker'
+            }
+        }
+        stage('Run Test Kitchen') {
+            steps {
+               sh 'sudo kitchen test' 
+            }
+        }
         
    stage('Upload Cookbook to Chef Server, Converge Nodes') {
             steps {

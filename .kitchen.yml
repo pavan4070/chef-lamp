@@ -1,6 +1,6 @@
 ---
 driver:
-  name: ec2
+  name: docker
 
 provisioner:
   name: chef_zero
