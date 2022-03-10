@@ -55,7 +55,7 @@ pipeline {
                     sh 'cd /var/lib/jenkins/workspace/'  
 		    sh 'knife node policy set lamp lamp lamp'
     
-                withCredentials([sshUserPrivateKey(credentialsId: 'node-key', keyFileVariable: 'AGENT_SSHKEY', passphraseVariable: '', usernameVariable: 'ubuntu')]) {
+                withCredentials([sshUserPrivateKey(credentialsId: 'keypair', keyFileVariable: 'AGENT_SSHKEY', passphraseVariable: '', usernameVariable: 'ubuntu')]) {
                         sh "knife ssh 'name:lamp' -x ubuntu -i $AGENT_SSHKEY 'sudo chef-client' -c $CHEFREPO/chef-repo/.chef/config.rb"      
                     }
                 }
