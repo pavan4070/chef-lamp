@@ -1,9 +1,0 @@
----
-username: ubuntu
-auto_security_group_id: sg-070abfdae05b20e46
-auto_key_id: kitchen-defaultubuntu2004-pavanpothakamuri-APACM4089-2022-03-04T06:36:00Z-q4ir3tig
-ssh_key: "/Users/pavanpothakamuri/Downloads/chef-repo/cookbooks/lamp/.kitchen/default-ubuntu-2004.pem"
-server_id: i-0a23162bbbc87f2dd
-hostname: ec2-44-201-133-78.compute-1.amazonaws.com
-last_action: create
-last_error: Kitchen::ActionFailed
