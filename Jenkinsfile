@@ -53,7 +53,7 @@ pipeline {
                     sh 'sudo rm -rf $WORKSPACE/Berksfile.lock'
                     sh 'mv $WORKSPACE/* $CHEFREPO/chef-repo/cookbooks/lamp'
                     sh 'cd /var/lib/jenkins/workspace/'  
-		    sh 'knife node policy set lamperver lamp lamp'
+		    sh 'knife node policy set lampserver lamp lamp'
                withCredentials([sshUserPrivateKey(credentialsId: 'keypair', keyFileVariable: 'AGENT_SSHKEY', passphraseVariable: '', usernameVariable: '')]) {
                         sh "knife ssh 'name:lamp' -x ubuntu -i $AGENT_SSHKEY 'sudo chef-client' -c /var/lib/jenkins/workspace/.chef/config.rb"      
                     }
