@@ -30,11 +30,11 @@ pipeline {
  
                      
 		    sh 'knife node policy set lampserver lamp lamp'
-               withCredentials([sshUserPrivateKey(credentialsId: 'keypair', keyFileVariable: 'AGENT_SSHKEY', passphraseVariable: '', usernameVariable: '')]) {
+           
                   sh 'pwd'
- 		  sh "knife ssh 'name:lampserver' -x ubuntu  -i $AGENT_SSHKEY 'sudo chef client'"   
+ 		  sh "cd /var/lib/jenkins/workspace/; knife ssh 'name:lampserver' -x ubuntu  -i keypair.pem 'sudo chef client'"   
                 
-                }
+                
             }    
 }
 }
