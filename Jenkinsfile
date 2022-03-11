@@ -32,7 +32,7 @@ pipeline {
 		    sh 'knife node policy set lampserver lamp lamp'
            
                   sh 'pwd'
- 		  sh "cd /var/lib/jenkins/workspace/; knife ssh 'name:lampserver' -x ubuntu  -i keypair.pem 'sudo chef client'"   
+ 		  sh "cd /var/lib/jenkins/workspace/; knife ssh 'name:lampserver' -x ubuntu  -i keypair.pem 'sudo chef-client'"   
                 
                 
             }    
