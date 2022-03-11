@@ -18,12 +18,18 @@ node["lamp"]["sites"].each do |sitename, data|
 
   directory document_root do
     mode "0755"
+ 
     recursive true
   end
 
-execute "enable-sites" do
-    command "a2ensite #{sitename}"
-    action :nothing
+directory "/var/www/html/example.org" do
+action :create
+end 
+
+directory "/var/www/html/#{sitename}/public_html" do
+recursive true   
+ action :create
+   
   end
 
 template "/etc/apache2/sites-available/#{sitename}.conf" do
@@ -39,9 +45,6 @@ notifies :run, "execute[enable-sites]"
     notifies :restart, "service[apache2]"
   end
 
-  directory "/var/www/html/#{sitename}/public_html" do
-    action :create
-  end
 
   file '/var/www/html/example.com/index.html' do
   content "<html>
@@ -66,7 +69,10 @@ end
 </html>"
 action :create
 end
-
+execute "enable-sites" do
+      command "a2ensite #{sitename}"
+       action :nothing
+       end
   directory "/var/www/html/#{sitename}/logs" do
     action :create
   end
