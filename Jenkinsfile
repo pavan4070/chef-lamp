@@ -28,11 +28,11 @@ pipeline {
    stage('Run Knife SSH') {
             steps {
  
-                    sh 'cd /var/lib/jenkins/workspace/'  
+                     
 		    sh 'knife node policy set lampserver lamp lamp'
                withCredentials([sshUserPrivateKey(credentialsId: 'keypair', keyFileVariable: 'AGENT_SSHKEY', passphraseVariable: '', usernameVariable: '')]) {
-              
- 		  sh "knife ssh 'name:lampserver  -i $AGENT_SSHKEY 'sudo chef client' -c /var/lib/jenkins/workspace/.chef/config.rb"   
+                  sh 'pwd'
+ 		  sh "knife ssh 'name:lampserver  -i $AGENT_SSHKEY 'sudo chef client'"   
                 
                 }
             }    
