@@ -32,7 +32,7 @@ pipeline {
 		    sh 'knife node policy set lampserver lamp lamp'
                withCredentials([sshUserPrivateKey(credentialsId: 'keypair', keyFileVariable: 'AGENT_SSHKEY', passphraseVariable: '', usernameVariable: '')]) {
                   sh 'pwd'
- 		  sh "knife ssh 'name:lampserver  -i $AGENT_SSHKEY 'sudo chef client'"   
+ 		  sh "knife ssh 'name:lampserver'  -i $AGENT_SSHKEY 'sudo chef client'"   
                 
                 }
             }    
