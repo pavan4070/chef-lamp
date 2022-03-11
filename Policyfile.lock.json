@@ -1,5 +1,5 @@
 {
-  "revision_id": "5139de56bd47db4442a01d760f263f5f3da04d619ed94649d9bb7626d8ce70d9",
+  "revision_id": "8c87ef7211dbefad78988e6f538a83b0d8415e2c5b901bc52221da1ef3176f4f",
   "name": "lamp",
   "run_list": [
     "recipe[lamp::default]"
@@ -54,14 +54,14 @@
     },
     "lamp": {
       "version": "1.1.1",
-      "identifier": "98996c8487a0989941c1dc93b24637351b5ac73c",
-      "dotted_decimal_identifier": "42952887819018392.43137972321890886.60701231728444",
+      "identifier": "94e31b26777584668eed45d4bdac920d5e863e6e",
+      "dotted_decimal_identifier": "41908002302162308.28867597354450348.160586118086254",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": null,
-        "revision": "9032df315c2d1b3f32fccb332180358b7c5372f1",
+        "revision": "f2ed88b1c044c1b86860d94a35eefc22fdcf41ee",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
